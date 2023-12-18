@@ -63,7 +63,7 @@ if (botao == 'Enviar'){
         const browser = await puppeteer.launch({headless:false});
         const page = await browser.newPage();
         await page.goto(nfAVU);
-        await page.setViewport({ width: 1366, height: 768 });
+        await page.setViewport({ width: 0, height: 0, deviceScaleFactor: 1});
         await page.waitForSelector('select[id="tipoRemetenteSelecionadoSemCertificado"]');
         await page.click('select[id="tipoRemetenteSelecionadoSemCertificado"]');
         await page.keyboard.press("ArrowDown");
