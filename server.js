@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const PORT = process.env.port || 5050;
 
+//carregamento de arquivos dentro do ejs(css/imports)
+app.use(express.static('src'));
 //pegando dados do formulário
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());

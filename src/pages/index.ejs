@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>NFE MM</title>
 </head>
 <body>
-    <h1>Escolha o emitente</h1>
+    <main>
+    <section>
+        <figure>
+            <img src="../image/logo.png" alt="Logo">
+        </figure>
+    <h1>Acesso NFE</h1>
 
     <form action="/auth/insert" method="POST">
     <select name="emitente" id="emitente">
-        <optgroup label="Belford Roxo">BELFORD ROXO
+        <optgroup class="optg-bel" label="Belford Roxo">BELFORD ROXO
         <option value="G DA S CABRAL"> G DA S CABRAL</option>
         </optgroup>
-        <optgroup label="NFSE GOV">
+        <optgroup class="optg-gov" label="NFSE GOV">
             <option value="ALEX SANDRO MELO DA SILVA">ALEX SANDRO MELO DA SILVA</option>
             <option value="JOSIMAR BORGES">JOSIMAR BORGES</option>
             <option value="EDILSON PIO">EDILSON PIO</option>
@@ -26,12 +35,14 @@
             <option value="LUCAS DIAS">LUCAS DIAS</option>
             <option value="SOLANGE BORDADOS">SOLANGE BORDADOS</option>
         </optgroup>
-        <optgroup label="NOTA FISCAL AVULSA">
+        <optgroup class="optg-avu" label="NOTA FISCAL AVULSA">
             <option value="EVA TERESINHA"> EVA TERESINHA</option>
         </optgroup>
     </select>
-    <button type="submit" value="Enviar" name="botao">Acessar</button>
+    <button type="submit" value="Enviar" name="botao">ACESSAR</button>
 </form>
+</section>
+</main>
 </body>
 
 
